@@ -1,0 +1,10 @@
+<!-- Carga los elementos de las rutas osea su descripcion  -->
+
+<ion-item [routerLink]="['/places', placeItem.id]">
+  <ion-avatar slot="start">
+    <ion-img [src]="placeItem.imageURL"></ion-img>
+  </ion-avatar>
+  <ion-label>
+    {{ placeItem.title }}
+  </ion-label>
+</ion-item>

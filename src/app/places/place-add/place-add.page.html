@@ -1,0 +1,52 @@
+<!-- Estructura para registrar los usuarios y acompañantes  -->
+
+
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>
+      Registro de usuarios
+    </ion-title>
+
+    <ion-buttons slot="end">
+    <ion-back-button defaultHref="/places"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-row>
+    <ion-col>
+      <ion-card>
+
+        <ion-title>
+          ---Registro del usuario---
+        </ion-title>
+
+        <ion-card-content>
+          <ion-input placeholder="Nombre" type="text" #title></ion-input>
+          <ion-input placeholder="Apellido" type="text" #title></ion-input>
+          <ion-input placeholder="Edad" type="number" #title></ion-input>
+          <ion-input placeholder="Cedula" type="number" #title></ion-input>
+          <ion-input placeholder="Correo" type="text" #title></ion-input>
+          <ion-input placeholder="Ocupacion en la organizacion" type="text" #title></ion-input>
+        </ion-card-content>
+
+        <ion-title>
+          ---Registro del acompañante---
+        </ion-title>
+
+        <ion-card-content>
+          <ion-input placeholder="Nombre" type="text" #title></ion-input>
+          <ion-input placeholder="Apellido" type="text" #title></ion-input>
+          <ion-input placeholder="Cedula" type="number" #title></ion-input> 
+          <ion-button color="success">Guardar</ion-button>
+        </ion-card-content>
+
+      </ion-card>
+
+    </ion-col>
+  </ion-row>
+
+</ion-content>

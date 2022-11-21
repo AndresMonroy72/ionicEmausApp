@@ -1,0 +1,52 @@
+<!-- Pagina inicial de Emaus (encabezado junto con el logo)  -->
+
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      
+    </ion-buttons>
+    <ion-title>Fundacion Comunidad Emaus Colombia</ion-title>
+    
+
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-grid class="ion-no-padding">
+<ion-row>
+  <ion-col class="ion-no-padding">
+    <ion-img src="https://scontent.feoh2-1.fna.fbcdn.net/v/t39.30808-6/272872988_5218587124840814_571890762436349580_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pxDYMT0sG-wAX885DlZ&_nc_ht=scontent.feoh2-1.fna&oh=00_AfD5EvWxvomW4XHOXVjjBMUCcJi8FEb_fjLH8AJluKli0g&oe=637DE1C9" alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img>
+  </ion-col>
+</ion-row>
+</ion-grid>
+
+</ion-content>
+
+
+
+
+
+
+
+<ion-content>
+  <ion-list>
+    <app-place-item *ngFor="let place of places" [placeItem]="place"></app-place-item>
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="success" (click)="addNewPlace()" type="button">
+      <ion-icon name="person-add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+
+
+
+
+
+
+ 
+
+
